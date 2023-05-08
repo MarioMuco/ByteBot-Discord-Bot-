@@ -32,7 +32,6 @@ async def help(ctx):
     help_embed = discord.Embed(title= "Command List", description = "All the available commnands", colour=0x8cd9e3)
     help_embed.set_author(name= "ByteBot")
     help_embed.add_field(name = "Hey", value="DMs you", inline = False)
-    help_embed.add_field(name = "Talk", value="Says random stuff", inline = False)
     help_embed.add_field(name = "Dice", value="Throws a die", inline = False)
     help_embed.add_field(name = "RNG", value="Random number between 1 and the given number", inline = False)
     help_embed.add_field(name = "Google", value="Searches in Google the given words", inline = False)

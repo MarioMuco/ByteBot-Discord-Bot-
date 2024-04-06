@@ -1,4 +1,7 @@
-<strong>ByteBot-Discord-Bot</strong> is a repository hosting a Discord bot named ByteBot. This bot is designed to enhance the functionality and user experience within Discord servers by providing various features and commands.
+<strong>ByteBot-Discord-Bot</strong> is a Discord bot named ByteBot. This bot is designed to enhance the functionality and user experience within Discord servers by providing various features and commands.
+
+![image](https://github.com/MarioMuco/ByteBot-Discord-Bot-/assets/45602326/7280de82-1c30-48f9-86b6-466d0cf5b7d5)
+
 
 <strong>Features:</strong>
 <ul>
@@ -9,5 +12,3 @@
 <li>Customization: Server administrators can customize ByteBot's behavior, prefix, and permissions to suit their specific requirements and preferences.</li>
 </ul>
 
-<strong>Credits:</strong>
-MarioMuco: Creator and maintainer of the ByteBot Discord bot.

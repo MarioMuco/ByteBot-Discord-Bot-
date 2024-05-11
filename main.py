@@ -5,7 +5,6 @@ import datetime
 import random
 from itertools import cycle
 
-
 #Prefiksi i Bot-it, case insensitive
 bot = commands.Bot(command_prefix="+" , case_insensitive = True , intents = discord.Intents.all())
 bot.remove_command("help") #Fshin komanden default 'help'
@@ -13,14 +12,14 @@ bot.remove_command("help") #Fshin komanden default 'help'
 #Aktiviteti i Bot-it
 @bot.event
 async def on_ready():
-    print("I'm online and ready to go") #Bot is ready and running
+    print("I'm online and ready to go") 
     change_act.start()
     #type 1 = twitch  2 = listening   3 = watching      
     #discord.Activity( type = ,name = "")
     return await bot.change_presence(activity = discord.Game(next(games))) #Bot is playing a game
 #Lista e lojrave qe po luan Bot-i
-games = cycle(["Mining and Crafting", "Simulator Games"])
-@tasks.loop(seconds = 1000) #Ndryshon lojen cdo 1000 sec
+games = cycle(["Minecraft", "Master Duel"])
+@tasks.loop(seconds = 3600) #Ndryshon lojen cdo 3600 sec
 async def change_act():
     await bot.change_presence(activity = discord.Game(next(games)))
 
@@ -39,7 +38,7 @@ async def help(ctx):
     help_embed.add_field(name = "Ban", value="Bans a member", inline = False)
     help_embed.add_field(name = "Unban", value="Unbans a member", inline = False)
     help_embed.add_field(name = "Kick", value="Kicks a member", inline = False)
-    help_embed.add_field(name = "Help", value="Displays this ", inline = False)
+    help_embed.add_field(name = "Help", value="Displays this page", inline = False)
     help_embed.set_footer(text = "Requested")
     await ctx.send(embed = help_embed)
 

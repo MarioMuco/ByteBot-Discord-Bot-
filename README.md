@@ -12,3 +12,8 @@
 <li>Customization: Server administrators can customize ByteBot's behavior, prefix, and permissions to suit their specific requirements and preferences.</li>
 </ul>
 
+# To run the bot:
+- Install Discord.py
+- Put your own bot token in `bot.run('')`
+- Type in terminal `python main.py`
+- Invite your bot in your own server
